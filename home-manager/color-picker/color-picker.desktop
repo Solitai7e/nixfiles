@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Color Picker
+Comment=Pick Colors from Anywhere on the Screen
+Icon=gtk-color-picker
+Exec=color-picker
+StartupNotify=false
+Categories=Graphics;
