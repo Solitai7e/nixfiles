@@ -1,0 +1,146 @@
+--- a/metacity-1/metacity-theme-2.xml
++++ b/metacity-1/metacity-theme-2.xml
+@@ -19,14 +19,14 @@
+
+ <!-- geometries -->
+
+-<frame_geometry name="normal" title_scale="medium" rounded_top_left="4" rounded_top_right="4">
++<frame_geometry name="normal" title_scale="medium" rounded_top_left="3" rounded_top_right="3">
+   <distance name="left_width" value="2"/>
+   <distance name="right_width" value="2"/>
+   <distance name="bottom_height" value="2"/>
+   <distance name="left_titlebar_edge" value="0"/>
+   <distance name="right_titlebar_edge" value="0"/>
+   <distance name="title_vertical_pad" value="13"/>
+-  <border name="title_border" left="10" right="10" top="0" bottom="0"/>
++  <border name="title_border" left="0" right="0" top="0" bottom="0"/>
+   <border name="button_border" left="0" right="0" top="0" bottom="0"/>
+   <aspect_ratio name="button" value="1"/>
+ </frame_geometry>
+@@ -83,14 +83,14 @@
+
+ <draw_ops name="title_focused">
+   <title
+-    x="(0 `max` ((width - title_width) / 2))"
++    x="0"
+     y="(0 `max` ((height - title_height) / 2))"
+     color="C_title_focused"/>
+ </draw_ops>
+
+ <draw_ops name="title_unfocused">
+   <title
+-    x="(0 `max` ((width - title_width) / 2))"
++    x="0"
+     y="(0 `max` ((height - title_height) / 2))"
+     color="C_title_unfocused"/>
+ </draw_ops>
+@@ -236,7 +236,7 @@
+ <!-- menu -->
+
+ <draw_ops name="menu_focused">
+-  <image filename="assets/menu.svg" x="(width - object_width) / 2" y="(height - object_height) / 2" width="object_width" height="object_height" alpha="0.7" colorize="C_title_focused"/>
++  <icon x="(width-mini_icon_width)/2" y="(height-mini_icon_height)/2" width="mini_icon_width" height="mini_icon_height"/>
+ </draw_ops>
+
+ <draw_ops name="menu_focused_prelight">
+@@ -248,7 +248,7 @@
+ </draw_ops>
+
+ <draw_ops name="menu_unfocused">
+-  <image filename="assets/menu.svg" x="(width - object_width) / 2" y="(height - object_height) / 2" width="object_width" height="object_height" alpha="0.7" colorize="C_title_unfocused"/>
++  <icon x="(width-mini_icon_width)/2" y="(height-mini_icon_height)/2" width="mini_icon_width" height="mini_icon_height" alpha="0.4"/>
+ </draw_ops>
+
+ <draw_ops name="menu_unfocused_prelight">
+@@ -480,10 +480,10 @@
+   <piece position="titlebar" draw_ops="entire_background_unfocused"/>
+ </frame_style>
+
+-<frame_style name="dialog_focused" geometry="nobuttons" parent="normal_focused">
++<frame_style name="dialog_focused" geometry="modal" parent="normal_focused">
+ </frame_style>
+
+-<frame_style name="dialog_unfocused" geometry="nobuttons" parent="normal_unfocused">
++<frame_style name="dialog_unfocused" geometry="modal" parent="normal_unfocused">
+ </frame_style>
+
+ <frame_style name="modal_dialog_focused" geometry="modal" parent="normal_focused">
+
+--- a/metacity-1/metacity-theme-3.xml
++++ b/metacity-1/metacity-theme-3.xml
+@@ -19,14 +19,14 @@
+
+ <!-- geometries -->
+
+-<frame_geometry name="normal" title_scale="medium" rounded_top_left="4" rounded_top_right="4">
++<frame_geometry name="normal" title_scale="medium" rounded_top_left="3" rounded_top_right="3">
+   <distance name="left_width" value="2"/>
+   <distance name="right_width" value="2"/>
+   <distance name="bottom_height" value="2"/>
+   <distance name="left_titlebar_edge" value="0"/>
+   <distance name="right_titlebar_edge" value="0"/>
+   <distance name="title_vertical_pad" value="13"/>
+-  <border name="title_border" left="10" right="10" top="0" bottom="0"/>
++  <border name="title_border" left="0" right="0" top="0" bottom="0"/>
+   <border name="button_border" left="0" right="0" top="0" bottom="0"/>
+   <aspect_ratio name="button" value="1"/>
+ </frame_geometry>
+@@ -83,11 +83,11 @@
+
+ <draw_ops name="title_focused">
+   <title version="< 3.1"
+-    x="(0 `max` ((width - title_width) / 2))"
++    x="0"
+     y="(0 `max` ((height - title_height) / 2))"
+     color="C_title_focused"/>
+   <title version=">= 3.1"
+-    x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
++    x="0"
+     y="(0 `max` ((height - title_height) / 2))"
+     ellipsize_width="width"
+     color="C_title_focused"/>
+@@ -95,11 +95,11 @@
+
+ <draw_ops name="title_unfocused">
+   <title version="< 3.1"
+-    x="(0 `max` ((width - title_width) / 2))"
++    x="0"
+     y="(0 `max` ((height - title_height) / 2))"
+     color="C_title_unfocused"/>
+   <title version=">= 3.1"
+-    x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
++    x="0"
+     y="(0 `max` ((height - title_height) / 2))"
+     ellipsize_width="width"
+     color="C_title_unfocused"/>
+@@ -246,7 +246,7 @@
+ <!-- menu -->
+
+ <draw_ops name="menu_focused">
+-  <image filename="assets/menu.svg" x="(width - object_width) / 2" y="(height - object_height) / 2" width="object_width" height="object_height" alpha="0.7" colorize="C_title_focused"/>
++  <icon x="(width-mini_icon_width)/2" y="(height-mini_icon_height)/2" width="mini_icon_width" height="mini_icon_height"/>
+ </draw_ops>
+
+ <draw_ops name="menu_focused_prelight">
+@@ -258,7 +258,7 @@
+ </draw_ops>
+
+ <draw_ops name="menu_unfocused">
+-  <image filename="assets/menu.svg" x="(width - object_width) / 2" y="(height - object_height) / 2" width="object_width" height="object_height" alpha="0.7" colorize="C_title_unfocused"/>
++  <icon x="(width-mini_icon_width)/2" y="(height-mini_icon_height)/2" width="mini_icon_width" height="mini_icon_height" alpha="0.4"/>
+ </draw_ops>
+
+ <draw_ops name="menu_unfocused_prelight">
+@@ -496,10 +496,10 @@
+   <piece position="titlebar" draw_ops="entire_background_unfocused"/>
+ </frame_style>
+
+-<frame_style name="dialog_focused" geometry="nobuttons" parent="normal_focused">
++<frame_style name="dialog_focused" geometry="modal" parent="normal_focused">
+ </frame_style>
+
+-<frame_style name="dialog_unfocused" geometry="nobuttons" parent="normal_unfocused">
++<frame_style name="dialog_unfocused" geometry="modal" parent="normal_unfocused">
+ </frame_style>
+
+ <frame_style name="modal_dialog_focused" geometry="modal" parent="normal_focused">
