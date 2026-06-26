@@ -1,0 +1,113 @@
+###Equilux for openbox by zabergan
+###zabergan@mail.bg
+###Equilux for openbox is free for use, change and modifications!
+
+### WINDOW
+
+border.width: 0
+
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.handle.width: 0
+
+padding.width: 12
+padding.height: 10
+
+window.label.text.justify: left
+window.active.border.color: #323232
+window.inactive.border.color: #323232
+window.active.title.separator.color: #323232
+window.inactive.title.separator.color: #323232
+window.active.client.color: #323232
+window.inactive.client.color: #323232
+
+window.active.label.text.color: #BEBEBE
+window.inactive.label.text.color: #BEBEBE
+
+window.active.button.unpressed.bg: parentrelative
+window.active.button.pressed.bg: parentrelative
+window.active.button.hover.bg: parentrelative
+window.active.button.disabled.bg: parentrelative
+window.active.button.toggled.unpressed.bg: parentrelative
+window.active.button.toggled.pressed.bg: parentrelative
+window.active.button.toggled.hover.bg: parentrelative
+window.inactive.button.unpressed.bg: parentrelative
+window.inactive.button.pressed.bg: parentrelative
+window.inactive.button.hover.bg: parentrelative
+window.inactive.button.disabled.bg: parentrelative
+window.inactive.button.toggled.unpressed.bg: parentrelative
+window.inactive.button.toggled.pressed.bg: parentrelative
+window.inactive.button.toggled.hover.bg: parentrelative
+
+window.*.button.menu.*.width = 16;
+window.*.button.menu.*.height = 16;
+
+window.active.button.unpressed.image.color: #BEBEBE
+window.active.button.pressed.image.color: #C3C3C3
+window.active.button.disabled.image.color: #2d3036
+window.active.button.hover.image.color: #8A8A8A
+window.active.button.toggled.unpressed.image.color: #BEBEBE
+window.active.button.toggled.pressed.image.color: #C3C3C3
+window.active.button.toggled.hover.image.color: #8A8A8A
+window.inactive.button.unpressed.image.color: #BEBEBE
+window.inactive.button.pressed.image.color: #C3C3C3
+window.inactive.button.disabled.image.color: #2d3036
+window.inactive.button.hover.image.color: #8A8A8A
+window.inactive.button.toggled.unpressed.image.color: #BEBEBE
+window.inactive.button.toggled.pressed.image.color: #C3C3C3
+window.inactive.button.toggled.hover.image.color: #8A8A8A
+
+window.active.title.bg: flat solid
+window.active.title.bg.color: #272727
+window.active.label.bg: flat solid
+window.active.label.bg.color: #272727
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #1e1e1e
+window.inactive.label.bg: flat solid
+window.inactive.label.bg.color: #1e1e1e
+
+
+### MENU
+
+menu.border.width: 5
+menu.separator.width: 1
+menu.separator.padding.width: 10
+menu.separator.padding.height: 2
+
+menu.overlap.x: -5
+menu.overlap.y: 0
+
+menu.border.color: #3C3C3C
+menu.separator.color: #323232
+
+menu.title.bg: flat solid
+menu.title.bg.color: #3C3C3C
+menu.title.text.color: #BEBEBE
+menu.title.text.justify: center
+
+menu.items.bg: flat solid
+menu.items.bg.color: #3C3C3C
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #5a5a5a
+menu.items.text.color: #BEBEBE
+menu.items.disabled.text.color: #76797F
+menu.items.active.text.color: #BEBEBE
+menu.items.active.disabled.text.color: #aeb0b6
+
+
+### OSD
+
+osd.border.width: 1
+
+osd.border.color: #3C3C3C
+
+osd.label.text.color: #BEBEBE
+
+osd.bg: flat solid
+osd.bg.color: #3C3C3C
+osd.label.bg: flat solid
+osd.label.bg.color: #3C3C3C
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #5A5A5A
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: #323232
